@@ -203,7 +203,7 @@ for wind_speed in wind_speed_list:
 
 
                 trap_point = trap_point_list[index]
-
+                # test comment
                 # print ('Fly heading:           ' +str(fly_heading*180/np.pi))
                 print ('Fly trajectory:        ' + str(trajectory_angle*180/np.pi))
                 print ('Wind direction:        '+ str(wind_dir*180/np.pi))
