@@ -363,6 +363,640 @@
     1.8020154151788776, 
     1.8025855542515821
    ], 
+   "trapping_info": [
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    {
+     "tracking prob value": 0.11949075459131117, 
+     "distance from source": 212.45162780403129, 
+     "trap angle": 5.6548667764616276
+    }, 
+    {
+     "tracking prob value": 0.1605261318111828, 
+     "distance from source": 182.9298534642048, 
+     "trap angle": 5.6548667764616276
+    }, 
+    {
+     "tracking prob value": 0.21392874634253203, 
+     "distance from source": 154.21122804203176, 
+     "trap angle": 5.6548667764616276
+    }, 
+    {
+     "tracking prob value": 0.28296560531941922, 
+     "distance from source": 126.24299246987779, 
+     "trap angle": 5.6548667764616276
+    }, 
+    {
+     "tracking prob value": 0.37166698477290921, 
+     "distance from source": 98.975702786515839, 
+     "trap angle": 5.6548667764616276
+    }, 
+    {
+     "tracking prob value": 0.48498893922396408, 
+     "distance from source": 72.362919402849371, 
+     "trap angle": 5.6548667764616276
+    }, 
+    {
+     "tracking prob value": 0.62900928950845569, 
+     "distance from source": 46.360925369686434, 
+     "trap angle": 5.6548667764616276
+    }, 
+    {
+     "tracking prob value": 0.81116426328172797, 
+     "distance from source": 20.928470125551218, 
+     "trap angle": 5.6548667764616276
+    }, 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    {
+     "tracking prob value": 0.11064683834945101, 
+     "distance from source": 220.14117863280018, 
+     "trap angle": 0.0
+    }, 
+    {
+     "tracking prob value": 0.12718510275503614, 
+     "distance from source": 206.2111751640503, 
+     "trap angle": 0.0
+    }, 
+    {
+     "tracking prob value": 0.14636728115424882, 
+     "distance from source": 192.16361918159458, 
+     "trap angle": 0.0
+    }, 
+    {
+     "tracking prob value": 0.16866528417519033, 
+     "distance from source": 177.98390949861539, 
+     "trap angle": 0.0
+    }, 
+    {
+     "tracking prob value": 0.19464778353961959, 
+     "distance from source": 163.65635918920211, 
+     "trap angle": 0.0
+    }, 
+    {
+     "tracking prob value": 0.2250032102181119, 
+     "distance from source": 149.16406092434457, 
+     "trap angle": 0.0
+    }, 
+    {
+     "tracking prob value": 0.26056906355446657, 
+     "distance from source": 134.4887333715599, 
+     "trap angle": 0.0
+    }, 
+    {
+     "tracking prob value": 0.30236951379262855, 
+     "distance from source": 119.61054539366656, 
+     "trap angle": 0.0
+    }, 
+    {
+     "tracking prob value": 0.35166398713981367, 
+     "distance from source": 104.50791412767474, 
+     "trap angle": 0.0
+    }, 
+    {
+     "tracking prob value": 0.41001041294286905, 
+     "distance from source": 89.157272218466076, 
+     "trap angle": 0.0
+    }, 
+    {
+     "tracking prob value": 0.47934821424317503, 
+     "distance from source": 73.532798483756324, 
+     "trap angle": 0.0
+    }, 
+    {
+     "tracking prob value": 0.56210812719686576, 
+     "distance from source": 57.606105044695553, 
+     "trap angle": 0.0
+    }, 
+    {
+     "tracking prob value": 0.66135883204909418, 
+     "distance from source": 41.345872402286425, 
+     "trap angle": 0.0
+    }, 
+    {
+     "tracking prob value": 0.78100461517874031, 
+     "distance from source": 24.717421984014116, 
+     "trap angle": 0.0
+    }, 
+    {
+     "tracking prob value": 0.92605455434707051, 
+     "distance from source": 7.6822132089600537, 
+     "trap angle": 0.0
+    }, 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    {
+     "tracking prob value": 0.12168547344382598, 
+     "distance from source": 210.63156497628086, 
+     "trap angle": 0.62831853071795862
+    }, 
+    {
+     "tracking prob value": 0.17939342352750129, 
+     "distance from source": 171.81739881815346, 
+     "trap angle": 0.62831853071795862
+    }, 
+    {
+     "tracking prob value": 0.27660717106041854, 
+     "distance from source": 128.51569343448898, 
+     "trap angle": 0.62831853071795862
+    }, 
+    {
+     "tracking prob value": 0.4506838264100233, 
+     "distance from source": 79.698923541862129, 
+     "trap angle": 0.62831853071795862
+    }, 
+    {
+     "tracking prob value": 0.78661122033193587, 
+     "distance from source": 24.002115474350333, 
+     "trap angle": 0.62831853071795862
+    }, 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    {
+     "tracking prob value": 0.11679464350462176, 
+     "distance from source": 214.73380700452662, 
+     "trap angle": 1.2566370614359172
+    }, 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    {
+     "tracking prob value": 0.11679464350461689, 
+     "distance from source": 214.73380700453083, 
+     "trap angle": 1.8849555921538759
+    }, 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    {
+     "tracking prob value": 0.78661122033162634, 
+     "distance from source": 24.002115474389679, 
+     "trap angle": 2.5132741228718345
+    }, 
+    {
+     "tracking prob value": 0.45068382640986004, 
+     "distance from source": 79.698923541898353, 
+     "trap angle": 2.5132741228718345
+    }, 
+    {
+     "tracking prob value": 0.27660717106032839, 
+     "distance from source": 128.51569343452158, 
+     "trap angle": 2.5132741228718345
+    }, 
+    {
+     "tracking prob value": 0.17939342352744866, 
+     "distance from source": 171.8173988181828, 
+     "trap angle": 2.5132741228718345
+    }, 
+    {
+     "tracking prob value": 0.1216854734437942, 
+     "distance from source": 210.63156497630695, 
+     "trap angle": 2.5132741228718345
+    }, 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    {
+     "tracking prob value": 0.9260545543470694, 
+     "distance from source": 7.6822132089601745, 
+     "trap angle": 3.1415926535897931
+    }, 
+    {
+     "tracking prob value": 0.78100461517873943, 
+     "distance from source": 24.717421984014226, 
+     "trap angle": 3.1415926535897931
+    }, 
+    {
+     "tracking prob value": 0.66135883204909351, 
+     "distance from source": 41.345872402286538, 
+     "trap angle": 3.1415926535897931
+    }, 
+    {
+     "tracking prob value": 0.56210812719686409, 
+     "distance from source": 57.606105044695859, 
+     "trap angle": 3.1415926535897931
+    }, 
+    {
+     "tracking prob value": 0.47934821424317464, 
+     "distance from source": 73.532798483756409, 
+     "trap angle": 3.1415926535897931
+    }, 
+    {
+     "tracking prob value": 0.41001041294286933, 
+     "distance from source": 89.157272218466005, 
+     "trap angle": 3.1415926535897931
+    }, 
+    {
+     "tracking prob value": 0.35166398713981339, 
+     "distance from source": 104.50791412767482, 
+     "trap angle": 3.1415926535897931
+    }, 
+    {
+     "tracking prob value": 0.30236951379262883, 
+     "distance from source": 119.61054539366647, 
+     "trap angle": 3.1415926535897931
+    }, 
+    {
+     "tracking prob value": 0.26056906355446641, 
+     "distance from source": 134.48873337155996, 
+     "trap angle": 3.1415926535897931
+    }, 
+    {
+     "tracking prob value": 0.2250032102181122, 
+     "distance from source": 149.16406092434445, 
+     "trap angle": 3.1415926535897931
+    }, 
+    {
+     "tracking prob value": 0.19464778353961956, 
+     "distance from source": 163.65635918920213, 
+     "trap angle": 3.1415926535897931
+    }, 
+    {
+     "tracking prob value": 0.16866528417519056, 
+     "distance from source": 177.98390949861528, 
+     "trap angle": 3.1415926535897931
+    }, 
+    {
+     "tracking prob value": 0.14636728115424852, 
+     "distance from source": 192.16361918159481, 
+     "trap angle": 3.1415926535897931
+    }, 
+    {
+     "tracking prob value": 0.12718510275503631, 
+     "distance from source": 206.21117516405016, 
+     "trap angle": 3.1415926535897931
+    }, 
+    {
+     "tracking prob value": 0.11064683834945087, 
+     "distance from source": 220.14117863280029, 
+     "trap angle": 3.1415926535897931
+    }, 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    {
+     "tracking prob value": 0.81116426328206737, 
+     "distance from source": 20.928470125509371, 
+     "trap angle": 3.7699111843077513
+    }, 
+    {
+     "tracking prob value": 0.62900928950872892, 
+     "distance from source": 46.360925369642999, 
+     "trap angle": 3.7699111843077513
+    }, 
+    {
+     "tracking prob value": 0.48498893922418518, 
+     "distance from source": 72.362919402803783, 
+     "trap angle": 3.7699111843077513
+    }, 
+    {
+     "tracking prob value": 0.37166698477308713, 
+     "distance from source": 98.975702786467963, 
+     "trap angle": 3.7699111843077513
+    }, 
+    {
+     "tracking prob value": 0.28296560531955856, 
+     "distance from source": 126.24299246982855, 
+     "trap angle": 3.7699111843077513
+    }, 
+    {
+     "tracking prob value": 0.2139287463426422, 
+     "distance from source": 154.21122804198026, 
+     "trap angle": 3.7699111843077513
+    }, 
+    {
+     "tracking prob value": 0.16052613181126846, 
+     "distance from source": 182.92985346415145, 
+     "trap angle": 3.7699111843077513
+    }, 
+    {
+     "tracking prob value": 0.11949075459137787, 
+     "distance from source": 212.45162780397544, 
+     "trap angle": 3.7699111843077513
+    }, 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    {
+     "tracking prob value": 0.93805161882640753, 
+     "distance from source": 6.3950300758269849, 
+     "trap angle": 4.3982297150257104
+    }, 
+    {
+     "tracking prob value": 0.57853715673958306, 
+     "distance from source": 54.725250495626121, 
+     "trap angle": 4.3982297150257104
+    }, 
+    {
+     "tracking prob value": 0.34275798112737377, 
+     "distance from source": 107.07306752459053, 
+     "trap angle": 4.3982297150257104
+    }, 
+    {
+     "tracking prob value": 0.19404869840485101, 
+     "distance from source": 163.96461287143191, 
+     "trap angle": 4.3982297150257104
+    }, 
+    {
+     "tracking prob value": 0.1043298145752794, 
+     "distance from source": 226.01981037943648, 
+     "trap angle": 4.3982297150257104
+    }, 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    {
+     "tracking prob value": 0.10432981457527737, 
+     "distance from source": 226.01981037943841, 
+     "trap angle": 5.026548245743669
+    }, 
+    {
+     "tracking prob value": 0.19404869840485131, 
+     "distance from source": 163.96461287143177, 
+     "trap angle": 5.026548245743669
+    }, 
+    {
+     "tracking prob value": 0.34275798112737499, 
+     "distance from source": 107.07306752459017, 
+     "trap angle": 5.026548245743669
+    }, 
+    {
+     "tracking prob value": 0.57853715673957651, 
+     "distance from source": 54.725250495627257, 
+     "trap angle": 5.026548245743669
+    }, 
+    {
+     "tracking prob value": 0.93805161882639798, 
+     "distance from source": 6.3950300758280028, 
+     "trap angle": 5.026548245743669
+    }, 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped", 
+    "not trapped"
+   ], 
    "par_vectors": [
     [
      -2.7554552980815448e-16, 

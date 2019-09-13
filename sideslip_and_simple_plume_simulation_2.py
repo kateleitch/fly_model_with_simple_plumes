@@ -156,7 +156,7 @@ dictionary = {}
 for wind_speed in wind_speed_list:
     dictionary[str(wind_speed)] = {}
     for wind_dir in wind_direction_list:
-        experiment_dictionary = {'trajectories':[],'wind vectors': [], 'perp_vectors':[], 'par_vectors':[], 'heading_unit_vectors':[],'groundspeeds along trajectories':[], 'windspeeds along trajectories':[], 'trajectory_vectors':[]}
+        experiment_dictionary = {'trajectories':[],'wind vectors': [], 'perp_vectors':[], 'par_vectors':[], 'heading_unit_vectors':[],'groundspeeds along trajectories':[], 'windspeeds along trajectories':[], 'trajectory_vectors':[], 'trapping_info': []}
 
         for fly_heading in fly_headings:
             return_list = calculate_trajectory_vector(wind_speed, wind_dir,
@@ -198,7 +198,6 @@ for wind_speed in wind_speed_list:
                 list_of_distances_from_source.append(distance_from_source)
             index, tracking_prob_value = max(enumerate(list_of_tracking_probs), key=operator.itemgetter(1))
             if tracking_prob_value > tracking_prob_cutoff:
-
                 trap_point = trap_point_list[index]
                 print ('Fly heading:           ' +str(fly_heading*180/np.pi))
                 print ('Fly trajectory:        ' + str(trajectory_angle*180/np.pi))
@@ -210,6 +209,9 @@ for wind_speed in wind_speed_list:
                 print ('Tracking prob value:   ' +str(tracking_prob_value))
                 print ('Distance from source:  ' +str(list_of_distances_from_source[index]))
 
+                experiment_dictionary['trapping_info'].append({'trap angle': trap_angle, 'tracking prob value': tracking_prob_value, 'distance from source':list_of_distances_from_source[index]})
+            else:
+                experiment_dictionary['trapping_info'].append('not trapped')
         dictionary[str(wind_speed)][str(wind_dir)] = experiment_dictionary
 
 with open('./sideslip_and_simple_plume_trap_counts.json', mode = 'w') as f:
