@@ -14,7 +14,7 @@ trap_names = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 distance_to_trap = 1000 # in meters
 trap_point_list = np.array([[np.cos(a)*distance_to_trap, np.sin(a)*distance_to_trap] for a in trap_angle_list])
 
-tracking_prob_cutoff = 0.1
+tracking_prob_cutoff = 0.0
 
 plume_angular_width = 2*np.pi/180. # in radians
 
@@ -112,10 +112,12 @@ def get_intersect(a1, a2, b1, b2):
     trajectory_bool = check_if_point_is_on_ray(intersection_point,trajectory_ray)
     plume_bool = check_if_point_is_on_ray(intersection_point, plume_ray)
     if trajectory_bool and plume_bool:
-        print ('both booleans true')
-        return (x/z, y/z)
+        print ('both booleans true for plume from trap at:          '+str(((np.arctan2(plume_ray[0][1], plume_ray[0][0])+2*np.pi) %(2*np.pi))*180/np.pi) + ' degrees')
+        intersection_point = (x/z, y/z)
     else:
-        return (float('inf'),float('inf'))
+        #print ('at least one boolean false for plume from trap at:  '+str(((np.arctan2(plume_ray[0][1], plume_ray[0][0])+2*np.pi) %(2*np.pi))*180/np.pi) + ' degrees')
+        intersection_point = (float('inf'),float('inf'))
+    return intersection_point
 
 def ask_if_fly_intersects_a_plume(trajectory, trap_point,plume_angular_width, wind_direction):
     """
@@ -195,13 +197,13 @@ for wind_speed in wind_speed_list:
             if tracking_prob_value > tracking_prob_cutoff:
 
                 trap_point = trap_point_list[index]
-                # print ('Fly heading:           ' +str(fly_heading*180/np.pi))
+                print ('Fly heading:           ' +str(fly_heading*180/np.pi))
                 print ('Fly trajectory:        ' + str(trajectory_angle*180/np.pi))
                 print ('Wind direction:        '+ str(wind_dir*180/np.pi))
                 trap_angle = np.arctan2(trap_point[1],trap_point[0])
                 trap_angle = (trap_angle+2*np.pi)%(2*np.pi)
                 print ('Trapped at trap angle: ' +str(trap_angle*180/np.pi))
-                print ('Trapped at trap index: '  +str(index))
+                print ('Trapped at trap index: ' +str(index))
                 print ('Tracking prob value:   ' +str(tracking_prob_value))
                 print ('Distance from source:  ' +str(list_of_distances_from_source[index]))
 
