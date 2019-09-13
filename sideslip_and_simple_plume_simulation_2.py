@@ -14,7 +14,7 @@ trap_names = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 distance_to_trap = 1000 # in meters
 trap_point_list = np.array([[np.cos(a)*distance_to_trap, np.sin(a)*distance_to_trap] for a in trap_angle_list])
 
-tracking_prob_cutoff = 0.0
+tracking_prob_cutoff = 0.1
 
 plume_angular_width = 2*np.pi/180. # in radians
 
@@ -28,7 +28,7 @@ wind_direction_list = [3*np.pi/2.]
 wind_speed_list = [1.5]
 
 
-weight_of_perpendicular_slip = 0
+weight_of_perpendicular_slip = 1.0
 fly_headings = list(np.linspace(0, np.pi*2, fly_number, endpoint = False))
 
 def calc_plume_track_prob(distance_from_plume, space_constant = 100):
@@ -74,8 +74,11 @@ def calculate_trajectory_vector (wind_speed, wind_dir,
 
 
 def check_if_point_is_on_ray (point, ray): # ray will look like [[x,y],[x2,y2]]
+    # print ('putative intersection point: ' +str(point))
     ray_to_test =      np.subtract(point,ray[0])
+    # print ('ray to test: ' + str(ray_to_test))
     ray_from_origin =  np.subtract(ray[1], ray[0])
+    # print ('ray from origin: ' +str(ray_from_origin))
     #magnitude = scalar_projection(ray_to_test,ray_from_origin)
     sign = np.sign(np.dot(ray_to_test,ray_from_origin))
     # print ()
@@ -104,16 +107,17 @@ def get_intersect(a1, a2, b1, b2):
         return (float('inf'), float('inf'))
     trajectory_ray = np.array([a1,a2])
     plume_ray = np.array([b1,b2])
-    intersection_point = np.array([x,y])
+    intersection_point = np.array([x/z,y/z])
     # print ('trajectory ray: '+ str(trajectory_ray))
     # print ('plume ray: ' +str(plume_ray))
-    # print ('intersection point: '+str(intersection_point))
-    # print ()
     trajectory_bool = check_if_point_is_on_ray(intersection_point,trajectory_ray)
+    # print ('trajectory boolean: ' + str(trajectory_bool))
     plume_bool = check_if_point_is_on_ray(intersection_point, plume_ray)
+    # print ('plume boolean: ' + str(plume_bool))
     if trajectory_bool and plume_bool:
-        print ('both booleans true for plume from trap at:          '+str(((np.arctan2(plume_ray[0][1], plume_ray[0][0])+2*np.pi) %(2*np.pi))*180/np.pi) + ' degrees')
+        # print ('both booleans true for plume from trap at:          '+str(((np.arctan2(plume_ray[0][1], plume_ray[0][0])+2*np.pi) %(2*np.pi))*180/np.pi) + ' degrees')
         intersection_point = (x/z, y/z)
+        # print ('intersection point: ' +str(intersection_point))
     else:
         #print ('at least one boolean false for plume from trap at:  '+str(((np.arctan2(plume_ray[0][1], plume_ray[0][0])+2*np.pi) %(2*np.pi))*180/np.pi) + ' degrees')
         intersection_point = (float('inf'),float('inf'))
@@ -121,30 +125,29 @@ def get_intersect(a1, a2, b1, b2):
 
 def ask_if_fly_intersects_a_plume(trajectory, trap_point,plume_angular_width, wind_direction):
     """
-    trajectory is a single (x,y) point; defined with respect to release site at origin
-    trap_point is a single (x,y) point
-    plume_angular_width is in radians
-    wind_direction is in radians
+    trajectory is a single (x,y) point; defined with respect to release site at origin. A numpy array.
+    trap_point is a single (x,y) point; defined with respect to release site at origin. A numpy array as well.
+    plume_angular_width is in radians. A float.
+    wind_direction is in radians. A float.
     """
     plume_angle_1 = (wind_direction + plume_angular_width/2. + 2*np.pi) % (2*np.pi)
     plume_angle_2 = (wind_direction - plume_angular_width/2. + 2*np.pi) % (2*np.pi)
     plume_unit_vector_1 = [np.cos(plume_angle_1)+trap_point[0], np.sin(plume_angle_1)+trap_point[1]]
     plume_unit_vector_2 = [np.cos(plume_angle_2)+trap_point[0], np.sin(plume_angle_2)+trap_point[1]]
     # print (trap_point)
-    # print ('plume angular width: ' +str(plume_angular_width*180/np.pi))
-    # print ('wind direction:      ' +str(wind_direction*180/np.pi))
+    # print ('plume angular width: ' + str(plume_angular_width*180/np.pi))
+    # print ('wind direction:      ' + str(wind_direction*180/np.pi))
     # print ('plume angle 1:       ' + str(plume_angle_1*180/np.pi))
     # print ('plume angle 2:       ' + str(plume_angle_2*180/np.pi))
-    # print ('plume unit vector 1: ' +str(plume_unit_vector_1))
-    # print ('plume unit vector 2: ' +str(plume_unit_vector_2))
+    # print ('plume unit vector 1: ' + str(plume_unit_vector_1))
+    # print ('plume unit vector 2: ' + str(plume_unit_vector_2))
     # print ()
     intersection_1 =  get_intersect((0,0) , trajectory, trap_point, plume_unit_vector_1 )
     distance_1 = np.sqrt((intersection_1[0]-trap_point[0])**2 + (intersection_1[1]-trap_point[1])**2)
-    return distance_1
-    # intersection_2 =  get_intersect((0,0) , trajectory, trap_point, plume_unit_vector_2 )
-    # distance_2 = np.sqrt((intersection_2[0]-trap_point[0])**2 + (intersection_2[1]-trap_point[1])**2)
-    # return np.min([distance_1,distance_2])
-    #get_intersect((0,0) , trajectory, trap_point, plume_unit_vector_2 )
+
+    intersection_2 =  get_intersect((0,0) , trajectory, trap_point, plume_unit_vector_2 )
+    distance_2 = np.sqrt((intersection_2[0]-trap_point[0])**2 + (intersection_2[1]-trap_point[1])**2)
+    return np.min([distance_1,distance_2])
 
 fig = plt.figure(figsize=(8,8))
 ax_handle = plt.subplot(1,1,1)
@@ -208,9 +211,6 @@ for wind_speed in wind_speed_list:
                 print ('Distance from source:  ' +str(list_of_distances_from_source[index]))
 
         dictionary[str(wind_speed)][str(wind_dir)] = experiment_dictionary
-print ()
-print (trap_point_list[0])
-print (trap_point_list[9])
 
 with open('./sideslip_and_simple_plume_trap_counts.json', mode = 'w') as f:
     json.dump(dictionary,f, indent = 1)
