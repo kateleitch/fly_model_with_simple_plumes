@@ -10,6 +10,8 @@ import operator
 
 trap_number = 10
 trap_angle_list = np.linspace(0,np.pi*2, trap_number, endpoint=False)
+#getting trap_angle_list in register with field data:
+#trap_angle_list = [(x + np.pi/2.0)%(2*np.pi) for x in trap_angle_list]
 trap_names = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 distance_to_trap = 1000 # in meters
 trap_point_list = np.array([[np.cos(a)*distance_to_trap, np.sin(a)*distance_to_trap] for a in trap_angle_list])
@@ -18,20 +20,22 @@ tracking_prob_cutoff = 0.1
 
 plume_angular_width = 2*np.pi/180. # in radians
 
-fly_number = 360
+fly_number = 2000
 
 preferred_groundspeed_along_body_axis = 1.0 #meters per second.
 forward_airspeed_limit = 1.8 #meters per second.
 reverse_airspeed_limit = -0.2 #meters per second.
 
 wind_direction_list = [3*np.pi/2.]
-wind_speed_list = [1.5]
+wind_direction_list = [(270-18)*np.pi/180.]
+wind_speed_list = [0.1, 0.5, 0.7, 1.0, 1.3, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.5]
+wind_speed_list = list(np.linspace(0, 2.5, 26, endpoint = True))
 
 
 weight_of_perpendicular_slip = 1.0
 fly_headings = list(np.linspace(0, np.pi*2, fly_number, endpoint = False))
 
-def calc_plume_track_prob(distance_from_plume, space_constant = 100):
+def calc_plume_track_prob(distance_from_plume, space_constant = 10):
     """
     Need to extensively discuss this with Annie; she did a lot of work to reduce the dimensionality of the plume tracking problem and I think she ended up with something that was sort of polynomial function relative to distance from plume source.
     """
